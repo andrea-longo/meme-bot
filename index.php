@@ -1,5 +1,22 @@
 <?php
 
+/*
+* This file is part of GeeksWeb Bot (GWB).
+*
+* GeeksWeb Bot (GWB) is free software; you can redistribute it and/or modify
+* it under the terms of the GNU General Public License version 3
+* as published by the Free Software Foundation.
+* 
+* GeeksWeb Bot (GWB) is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.  <http://www.gnu.org/licenses/>
+*
+* Author(s):
+*
+* © 2015-2018 Kasra Madadipouya <kasra@madadipouya.com>
+*
+*/
 require 'vendor/autoload.php';
 
 $client = new Zelenin\Telegram\Bot\Api('524326842:AAHKIV8D06niOlDE84sOR0k9DitpGN-INFA'); // Set your access token
