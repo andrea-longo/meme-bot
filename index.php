@@ -41,12 +41,12 @@ try {
         	'text' => "You can send email to : Kasra@madadipouya.com"
      	]);
     }
-    else if($update->message->text == '/help')
+    else if($update->message->text == '/citazione')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $cit[1] . "Hello"
+    		'text' => $cit[array_rand($cit, 1)[0]];
     		]);
 
     }
