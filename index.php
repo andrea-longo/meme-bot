@@ -32,9 +32,35 @@ saveInJsonFile($update, "ricevuto.json");
 //We answer HelloWorld
 $out = sendMsg($botToken,$chatId,"Hello World!");
 
+<<<<<<< HEAD
 //Salvo il json ricevuto per analizzarlo in seguito
 //We save the json received to parse it later
 saveInJsonFile($out, "inviato.json");
+=======
+    if($update->message->text == '/email')
+    {
+    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+        	'chat_id' => $update->message->chat->id,
+        	'text' => "You can send email to : Kasra@madadipouya.com"
+     	]);
+    }
+    else if($update->message->text == '/salutami') 
+    {
+    		$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    $response = $client->sendMessage(['chat_id' => $update->message->chat->id,
+            'text' => "Ciao, come stai?"
+    ]);
+    }
+    else if($update->message->text == '/help')
+    {
+    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => "List of commands :\n /email -> Get email address of the owner \n /latest -> Get latest posts of the blog 
+    		/help -> Shows list of available commands"
+    		]);
+>>>>>>> 77e16ad350be7e0643549b9fda1b0492b7925320
 
 
 /**
