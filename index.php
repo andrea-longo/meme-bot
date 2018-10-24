@@ -26,22 +26,21 @@ $update = json_decode(file_get_contents('php://input'));
 
 $cit = array(
     "15 e 18 quanto fa coglione?",
-    "Maleducata troia dea Madonna."
-);
+    "Maleducata troia dea Madonna",
+	"Te odio Cristo, mori Dio can",
+	"Che metodo bifolco de finire ea setimana",
+	"Dio merdah",
+	"Vara chi che ga i schei",
+	"Qua ghe voe satana Dio can",
+	"E ti cossa spetito?",
+	"Mi no vegno tajartea no de sicuro"
+);fa
 
 
 //your app
 try {
 
-    if($update->message->text == '/email')
-    {
-    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendMessage([
-        	'chat_id' => $update->message->chat->id,
-        	'text' => "You can send email to : Kasra@madadipouya.com"
-     	]);
-    }
-    else if($update->message->text == '/citazione')
+    if($update->message->text == '/citazione')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
@@ -50,29 +49,12 @@ try {
     		]);
 
     }
-    else if($update->message->text == '/latest')
-    {
-    		Feed::$cacheDir 	= __DIR__ . '/cache';
-			Feed::$cacheExpire 	= '5 hours';
-			$rss 		= Feed::loadRss($url);
-			$items 		= $rss->item;
-			$lastitem 	= $items[0];
-			$lastlink 	= $lastitem->link;
-			$lasttitle 	= $lastitem->title;
-			$message = $lasttitle . " \n ". $lastlink;
-			$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-			$response = $client->sendMessage([
-					'chat_id' => $update->message->chat->id,
-					'text' => $message
-				]);
-
-    }
     else
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => "Invalid command, please use /help to get list of available commands"
+    		'text' => "Invalid command"
     		]);
     }
 
