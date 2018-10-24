@@ -34,6 +34,13 @@ try {
         	'text' => "You can send email to : Kasra@madadipouya.com"
      	]);
     }
+    else if($update->message->text == '/salutami') 
+    {
+    		$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    $response = $client->sendMessage(['chat_id' => $update->message->chat->id,
+            'text' => "Ciao, come stai?"
+    ]);
+    }
     else if($update->message->text == '/help')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
