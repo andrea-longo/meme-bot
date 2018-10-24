@@ -46,7 +46,7 @@ try {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $cit[array_rand($cit, 1)[0]];
+    		'text' => $cit[0];
     		]);
 
     }
