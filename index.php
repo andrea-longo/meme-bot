@@ -20,7 +20,8 @@
     
 require 'vendor/autoload.php';
 
-$client = new Zelenin\Telegram\Bot\Api('524326842:AAHKIV8D06niOlDE84sOR0k9DitpGN-INFA');
+$token=getenv('TOKEN_VAR');
+$client = new Zelenin\Telegram\Bot\Api($token);
 $url = ''; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 
