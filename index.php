@@ -49,6 +49,13 @@ try {
     		]);
 
     }
+    else if($update->message->text == 'cit'){
+    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => $cit[array_rand($cit, 1)]
+    		]);
+    }
     else
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
