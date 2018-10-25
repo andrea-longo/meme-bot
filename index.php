@@ -34,7 +34,7 @@ $cit = array(
 	"Qua ghe voe satana Dio can",
 	"E ti cossa spetito?",
 	"Mi no vegno tajartea no de sicuro"
-);fa
+);
 
 
 //your app
