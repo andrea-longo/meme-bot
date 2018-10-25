@@ -37,20 +37,18 @@ $cit = array(
 	"Mi no vegno tajartea no de sicuro"
 );
 
-
-//your app
 try {
 
-    if($update->message->text == '/citazione')
+    if($update->message->text == '/help')
     {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => $cit[array_rand($cit, 1)]
+    		'text' => "I comandi disponibili sono:\nCit - Fornisce una citazione casuale"
     		]);
 
     }
-    else if($update->message->text == 'cit'){
+    else if($update->message->text == 'cit' || $update->message->text == 'Cit'){
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
