@@ -64,7 +64,9 @@ $cit = array(
 	"Chela maiala",
 	"Domani mecatoooo",
 	"So pí veoce mi de ti",
-	"Ea fiera dee tonelate dea merda"
+	"Ea fiera dee tonelate dea merda",
+	"Dio schifoso cane",
+	"Chi è quel mona che sbate le porte"
 	
 	
 );
