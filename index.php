@@ -27,14 +27,36 @@ $update = json_decode(file_get_contents('php://input'));
 
 $cit = array(
     "15 e 18 quanto fa coglione?",
-    "Maleducata troia dea Madonna",
+    "Chea maleducata troia dea Madonna",
 	"Te odio Cristo, mori Dio can",
 	"Che metodo bifolco de finire ea setimana",
 	"Dio merdah",
 	"Vara chi che ga i schei",
 	"Qua ghe voe satana Dio can",
 	"E ti cossa spetito?",
-	"Mi no vegno tajartea no de sicuro"
+	"Mi no vegno tajartea no de sicuro",
+	"Palazzo Porco Dio", 
+	"Paghei a multa i marochini Dio can",
+	"Xe ea parte mia chea là",
+	"Me tica infetarlo de biasteme",
+	"Dio bifolco,trifolco,superfolco",
+	"Dove xeo el classon tu sto merda de camion Dio bastardo",
+	"Dio bestia",
+	"Pronto per ripartire?",
+	"Ga i spasmi",
+	"E mi me meto el casco",
+	"Ero Giulia?",
+	"40 anni el ga durà porco Dio",
+	"Ció Art Atachake",
+	"In boca ai altri te fa schifo",
+	"Te tiro un sciafon che te impituro su pal muro",
+	"Sta alto co chea cazioea Dio can",
+	"Te ve sul sporco.......Dio",
+	"Dove la metto la benna?",
+	"Portatemi le arance...spremute",
+	"Te me ghe bagna el calsetto Dio can",
+	"E l'erba sta alta fiche vojo mì"
+	
 );
 
 try {
