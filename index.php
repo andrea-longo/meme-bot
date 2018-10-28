@@ -55,15 +55,7 @@ try {
     		'text' => $cit[array_rand($cit, 1)]
     		]);
     }
-    else
-    {
-    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendMessage([
-    		'chat_id' => $update->message->chat->id,
-    		'text' => "Invalid command"
-    		]);
-    }
-
+		
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
 
     //echo error message ot log it
