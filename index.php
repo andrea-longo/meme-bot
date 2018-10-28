@@ -54,8 +54,18 @@ $cit = array(
 	"Te ve sul sporco.......Dio",
 	"Dove la metto la benna?",
 	"Portatemi le arance...spremute",
-	"Te me ghe bagna el calsetto Dio can",
-	"E l'erba sta alta fiche vojo mì"
+	"Te me ghe meso soto acqua el calsetto se the o ghe rovinà te bato come un caco",
+	"E l'erba sta alta finche vojo mì",
+	"Te si un handicapato nato pal culo ricordate.",
+	"Vedito perchè no te ghe a testa perchè te a ghe cagà fora da picenin",
+	"Deficiente,deficiente, 1000 volte deficiente",
+	"Svejate no...animale...bastardo",
+	"Questa è  la mia palude",
+	"Chela maiala",
+	"Domani mecatoooo",
+	"So pí veoce mi de ti",
+	"Ea fiera dee tonelate dea merda"
+	
 	
 );
 
