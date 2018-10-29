@@ -88,6 +88,7 @@ try {
     		]);
     }
     else if($update->message->text == 'Video'){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendVideo([
 		'chat_id' => $update->message->chat->id,
 		'video' => 'https://www.youtube.com/watch?v=-VvV4e6v4Hs'
