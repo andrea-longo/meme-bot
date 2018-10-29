@@ -52,11 +52,19 @@
 
 try {
 
-    if($update->message->text == '/help') {
+    if($update->message->text == '/comandi') {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
-    		'text' => "I comandi disponibili sono:\nCit - Fornisce una citazione casuale"
+    		'text' => "I comandi disponibili sono:
+			\nCit - Fornisce una citazione casuale
+			\nVideo palazzo pd - palazzo porco dio
+			\nVideo pompino - pompino con sparo
+			\nVideo sberla - manifestazione contro i bambini
+			\nVideo zia gabriella - tanti auguri zia Gabriella
+			\nVideo 15 e 18 - 15 e 18 quanto fa coglione?
+			\nVideo di merdah - panzone affannato
+			\nVideo il motore - barca perde il motore"
     	]);
     }
     else if($update->message->text == 'cit' || $update->message->text == 'Cit') {
@@ -73,7 +81,7 @@ try {
 			'text' => 'https://youtu.be/5NsXGRyrtQI'
 		]);
     }
-    else if($update->message->text == 'Video pompino pistola') {
+    else if($update->message->text == 'Video pompino') {
 		$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
 			'chat_id' => $update->message->chat->id,
