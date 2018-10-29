@@ -26,8 +26,8 @@ $url = ''; // URL RSS feed
 $update = json_decode(file_get_contents('php://input'));
 
 $cit = array(
-    "15 e 18 quanto fa coglione?",
-    "Chea maleducata troia dea Madonna",
+   	"15 e 18 quanto fa coglione?",
+    	"Chea maleducata troia dea Madonna",
 	"Te odio Cristo, mori Dio can",
 	"Che metodo bifolco de finire ea setimana",
 	"Dio merdah",
@@ -38,9 +38,9 @@ $cit = array(
 	"Palazzo Porco Dio", 
 	"Paghei a multa i marochini Dio can",
 	"Xe ea parte mia chea là",
-	"Me tica infetarlo de biasteme",
+	"Me toca infetarlo de biasteme",
 	"Dio bifolco,trifolco,superfolco",
-	"Dove xeo el classon tu sto merda de camion Dio bastardo",
+	"Dove xeo el classon su sto merda de camion Dio bastardo",
 	"Dio bestia",
 	"Pronto per ripartire?",
 	"Ga i spasmi",
@@ -67,8 +67,6 @@ $cit = array(
 	"Ea fiera dee tonelate dea merda",
 	"Dio schifoso cane",
 	"Chi è quel mona che sbate le porte"
-	
-	
 );
 
 try {
@@ -88,6 +86,12 @@ try {
     		'chat_id' => $update->message->chat->id,
     		'text' => $cit[array_rand($cit, 1)]
     		]);
+    }
+    else if($update->message->text == 'Video'){
+    	$response = $client->sendVideo([
+		'chat_id' => $update->message->chat->id,
+		'video' => 'https://www.youtube.com/watch?v=-VvV4e6v4Hs'
+	]);
     }
 		
 } catch (\Zelenin\Telegram\Bot\NotOkException $e) {
