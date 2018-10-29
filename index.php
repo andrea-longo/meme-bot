@@ -89,9 +89,9 @@ try {
     }
     else if($update->message->text == 'Video'){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
-    	$response = $client->sendPhoto([
+    	$response = $client->sendDocument([
 		'chat_id' => $update->message->chat->id,
-		'photo' => 'https://it.wikipedia.org/wiki/Waymo#/media/File:Waymo_self-driving_car_side_view.gk.jpg'
+		'document' => 'https://www.youtube.com/watch?v=-VvV4e6v4Hs&t=7s'
 	]);
     }
 		
