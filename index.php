@@ -87,11 +87,25 @@ try {
     		'text' => $cit[array_rand($cit, 1)]
     		]);
     }
-    else if($update->message->text == 'AaA'){
+    else if($update->message->text == 'Video palazzo pd'){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
 		'chat_id' => $update->message->chat->id,
 		'text' => 'https://youtu.be/5NsXGRyrtQI'
+	]);
+    }
+    else if($update->message->text == 'Video pompino pistola'){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+		'chat_id' => $update->message->chat->id,
+		'text' => 'https://youtu.be/s1w7kSvTWjk'
+	]);
+    }
+else if($update->message->text == 'Video sberla'){
+	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+		'chat_id' => $update->message->chat->id,
+		'text' => 'https://youtu.be/s6cQgvEEs8E'
 	]);
     }
 		
