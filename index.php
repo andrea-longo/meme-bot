@@ -91,7 +91,7 @@ try {
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendPhoto([
 		'chat_id' => $update->message->chat->id,
-		'photo' => 'https://www.google.it/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiZkMGu56veAhUGjqQKHZ9jC2oQjRx6BAgBEAU&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDRG_Class_E_18&psig=AOvVaw0_nLNmJv6SNSWK-3wUQwsb&ust=1540907891904402'
+		'photo' => 'https://it.wikipedia.org/wiki/Waymo#/media/File:Waymo_self-driving_car_side_view.gk.jpg'
 	]);
     }
 		
