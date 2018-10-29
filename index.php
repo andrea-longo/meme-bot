@@ -91,7 +91,7 @@ try {
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
 		'chat_id' => $update->message->chat->id,
-		'text' => 'https://www.youtube.com/watch?v=-VvV4e6v4Hs&t=7s'
+		'text' => 'https://www.youtube.com/watch?v=-VvV4e6v4Hs'
 	]);
     }
 		
