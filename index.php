@@ -87,11 +87,11 @@ try {
     		'text' => $cit[array_rand($cit, 1)]
     		]);
     }
-    else if($update->message->text == 'Video'){
+    else if($update->message->text == 'AaA'){
 	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
 		'chat_id' => $update->message->chat->id,
-		'text' => 'https://www.youtube.com/watch?v=-VvV4e6v4Hs'
+		'text' => 'https://youtu.be/M_7BhQC0mUE'
 	]);
     }
 		
