@@ -132,12 +132,12 @@ try {
 			'text' => 'https://youtu.be/36PXfNdYLGk'
 		]);
     }
-	else if( strpos($update->message->text, 'Offendi') !== false ){
+	else if( $update->message->text == 'AaA' ){
 		// $user = str_replace("Offendi", "", $update->message->text);
 		$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
 			'chat_id' => $update->message->chat->id,
-			'text' => "Putana to mare, bifolco to pare."
+			'text' => $update->message->text
 		]);
 	}
 		
