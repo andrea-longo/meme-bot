@@ -85,15 +85,15 @@ try {
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
     		'text' => "I comandi disponibili sono:"
-			."\n &#4054 Offendi <nome> - Offesa random"
-			. "\n &#4054 Cit - Fornisce una citazione casuale"
-			. "\n &#4054 Video palazzo pd - Palazzo porco dio"
-			."\n &#4054 Video pompino - Pompino con sparo"
-			."\n &#4054 Video sberla - Manifestazione contro i bambini"
-			."\n &#4054 Video zia gabriella - Tanti auguri zia Gabriella"
-			."\n &#4054 Video 15 e 18 - 15 e 18 quanto fa coglione?"
-			."\ n&#4054 Video di merdah - Panzone affannato"
-			."\n &#4054 Video il motore - Barca perde il motore"
+			."\n ■ Offendi <nome> - Offesa random"
+			."\n ■ Cit - Fornisce una citazione casuale"
+			."\n ■ Video palazzo pd - Palazzo porco dio"
+			."\n ■ Video pompino - Pompino con sparo"
+			."\n ■ Video sberla - Manifestazione contro i bambini"
+			."\n ■ Video zia gabriella - Tanti auguri zia Gabriella"
+			."\n ■ Video 15 e 18 - 15 e 18 quanto fa coglione?"
+			."\n ■ Video di merdah - Panzone affannato"
+			."\n ■ Video il motore - Barca perde il motore"
     	]);
     }
     else if($update->message->text == 'cit' || $update->message->text == 'Cit') {
