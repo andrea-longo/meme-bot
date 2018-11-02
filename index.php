@@ -71,15 +71,16 @@
 		"lazaròn",
 		"te dago un sciafon che te impituro su pal muro",
 		"facia da merda",
-		"to pare so ciama Aronne ero?",
+		"to pare se ciama Aronne ero?",
 		"bifolco to pare, putana to mare",
 		"ti mai a mi, mi sempre a ti",
-		"ti scuoio dio merda"
+		"ti scuoio dio merda",
+		"te si un handicappato nato pal culo"
 	);
 
 try {
 
-    if($update->message->text == '/comandi') {
+    if($update->message->text == 'Comandi') {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
     		'chat_id' => $update->message->chat->id,
