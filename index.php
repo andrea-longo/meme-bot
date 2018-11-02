@@ -59,7 +59,8 @@
 		"Come se chiama, non me viene per ora Bonfiglio",
 		"Matona tachina",
 		"Me toca ndare magnare chea merda de pure",
-		"Ridame a torcia Dio can"
+		"Ridame a torcia Dio can",
+		"Sloggo devo andare dal parrucchiere"
 	);
 
 	$offese = array(
@@ -75,7 +76,11 @@
 		"bifolco to pare, putana to mare",
 		"ti mai a mi, mi sempre a ti",
 		"ti scuoio dio merda",
-		"te si un handicappato nato pal culo"
+		"te si un handicappato nato pal culo",
+		"spara Dio can",
+		"quanto sei disabile mentalmente",
+		"devi andare avanti, sono solo contro due, e uno è un tank./nChe cura anche",
+		"te ghe da morire di fronte gli applausi dea to fameja"
 	);
 
 try {
@@ -87,6 +92,14 @@ try {
     		'text' => "I comandi disponibili sono:"
 			."\n ■ Offendi <nome> - Offesa random"
 			."\n ■ Cit - Fornisce una citazione casuale"
+			."\n ■ Video - Fornisce lista video"
+    	]);
+    }
+	else if($update->message->text == 'Video'){
+    	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
+    	$response = $client->sendMessage([
+    		'chat_id' => $update->message->chat->id,
+    		'text' => "I video disponibili sono:"
 			."\n ■ Video palazzo pd - Palazzo porco dio"
 			."\n ■ Video pompino - Pompino con sparo"
 			."\n ■ Video sberla - Manifestazione contro i bambini"
@@ -95,7 +108,8 @@ try {
 			."\n ■ Video di merdah - Panzone affannato"
 			."\n ■ Video il motore - Barca perde il motore"
     	]);
-    }
+
+	}
     else if($update->message->text == 'cit' || $update->message->text == 'Cit') {
     	$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
