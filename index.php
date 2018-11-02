@@ -132,12 +132,12 @@ try {
 			'text' => 'https://youtu.be/36PXfNdYLGk'
 		]);
     }
-	else if( strpos($update->message->text , 'AaA') !== FALSE ){
-		// $user = str_replace("Offendi", "", $update->message->text);
+	else if( strpos($update->message->text , 'Offendi') !== FALSE ){
+		$user = str_replace("Offendi", "", $update->message->text);
 		$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
 			'chat_id' => $update->message->chat->id,
-			'text' => $update->message->text
+			'text' => $user
 		]);
 	}
 		
