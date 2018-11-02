@@ -41,7 +41,7 @@
 		"Vedito perchè no te ghe a testa perchè te a ghe cagà fora da picenin",
 		"Deficiente,deficiente, 1000 volte deficiente",
 		"Svejate no ...animale ...bastardo",
-		"Questa è  la mia palude",
+		"Questa è la mia palude",
 		"Chela maiala",
 		"Domani mecatoooo",
 		"So pí veoce mi de ti",
@@ -55,8 +55,26 @@
 		"Dio malato Dio cane",
 		"Altro che Maria Vergine, Maria Vacca",
 		"Madonna tripla",
-		"Orca timonea"
+		"Orca timonea",
+		"Come se chiama, non me viene per ora Bonfiglio",
+		"Matona tachina",
+		"Me toca ndare magnare chea merda de pure",
+		"Ridame a torcia Dio can"
+	);
 
+	$offese = array(
+		"te bato come un caco",
+		"deficiente,deficiente, 1000 volte deficiente",
+		"sei peggio di Boaretto",
+		"chel madre che si sta",
+		"cauterio",
+		"lazaròn",
+		"te dago un sciafon che te impituro su pal muro",
+		"facia da merda",
+		"to pare so ciama Aronne ero?",
+		"bifolco to pare, putana to mare",
+		"ti mai a mi, mi sempre a ti",
+		"ti scuoio dio merda"
 	);
 
 try {
