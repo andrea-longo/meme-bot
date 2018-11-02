@@ -39,7 +39,7 @@
 		"E l'erba sta alta finche vojo mì",
 		"Te si un handicapato nato pal culo ricordate.",
 		"Vedito perchè no te ghe a testa perchè te a ghe cagà fora da picenin",
-		"Deficiente,deficiente, 1000 volte deficiente",
+		"Deficiente,deficente, 1000 volte deficente",
 		"Svejate no ...animale ...bastardo",
 		"Questa è la mia palude",
 		"Chela maiala",
@@ -60,7 +60,8 @@
 		"Matona tachina",
 		"Me toca ndare magnare chea merda de pure",
 		"Ridame a torcia Dio can",
-		"Sloggo devo andare dal parrucchiere"
+		"Sloggo devo andare dal parrucchiere", 
+		"E domande del cazzo sempre"
 	);
 
 	$offese = array(
@@ -79,8 +80,9 @@
 		"te si un handicappato nato pal culo",
 		"spara Dio can",
 		"quanto sei disabile mentalmente",
-		"devi andare avanti, sono solo contro due, e uno è un tank./nChe cura anche",
-		"te ghe da morire di fronte gli applausi dea to fameja"
+		"devi andare avanti, sono solo contro due, e uno è un tank. /n Che cura anche",
+		"te ghe da morire di fronte gli applausi dea to fameja",
+		"te odiemo the ghemo sempre odià"
 	);
 
 try {
