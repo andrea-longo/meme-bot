@@ -133,11 +133,11 @@ try {
 		]);
     }
 	else if(strpos($update->message->text, 'Offendi')){
-		$user = str_replace("Offendi", "", $update->message->text);
+		// $user = str_replace("Offendi", "", $update->message->text);
 		$response = $client->sendChatAction(['chat_id' => $update->message->chat->id, 'action' => 'typing']);
     	$response = $client->sendMessage([
 			'chat_id' => $update->message->chat->id,
-			'text' => $user . "Putana to mare, bifolco to pare."
+			'text' => "Putana to mare, bifolco to pare."
 		]);
 	}
 		
